@@ -1,0 +1,407 @@
+/* Big Screens to 1200px */
+@media only screen and (max-width: 1200px) {
+  .navbar-links li a {
+    padding: 25px 10px;
+  }
+  .navbar-links li {
+    position: relative;
+    right: 33%;
+    margin-left: 35px;
+  }
+
+  form {
+    width: 500px;
+  }
+
+  .info-text {
+    left: 80px;
+  }
+
+  .contact-button {
+    left: -60px;
+  }
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .company-profile {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  h2::after {
+    margin-bottom: 15px;
+  }
+
+  .partner-section {
+    height: 100vh;
+  }
+  .partner-one {
+    margin-right: 30px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+    left: 15px;
+    top: -5px;
+  }
+}
+
+/* Big Tablets to Laptops: 769px to 1024px */
+@media only screen and (max-width: 1024px) {
+  .hero-text {
+    font-size: 50px;
+  }
+  .logo-image img {
+    position: relative;
+    margin-left: 20px;
+  }
+  .navbar-links li {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .button-booking {
+    font-size: 12px;
+    margin-left: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .section-about {
+    padding: 20px 20px;
+  }
+  .company-profile {
+    font-size: 15px;
+  }
+  .help-steps {
+    padding: 15px 15px;
+  }
+
+  .partner-image-one {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+  }
+  .partner-image-two {
+    margin-top: 40px;
+    height: 300px;
+    width: 300px;
+  }
+  .partner-one-label {
+    font-size: 15px;
+    left: 120px;
+    bottom: 280px;
+  }
+  .partner-two-label {
+    font-size: 15px;
+    left: 50px;
+    bottom: 280px;
+  }
+  .overlay-one p {
+    font-size: 12px;
+  }
+  .overlay-one {
+    height: 300px;
+    width: 300px;
+    bottom: 305px;
+  }
+
+  .overlay-two {
+    height: 300px;
+    width: 300px;
+    bottom: 305px;
+  }
+
+  .overlay-two p {
+    font-size: 12px;
+  }
+  figcaption {
+    margin-left: 97px;
+  }
+  .display-text {
+    font-size: 15px;
+  }
+  .hover-text {
+    font-size: 13px;
+  }
+
+  form {
+    width: 70%;
+    margin-right: 30px;
+  }
+
+  .info-text {
+    font-size: 15px;
+    bottom: 30px;
+    left: 80px;
+  }
+
+  .contact-button {
+    top: 40px;
+    right: 50px;
+    font-size: 15px;
+    padding: 10px 10px;
+    width: 120px;
+  }
+
+  .box2,
+  .box5 {
+    margin-left: 50px;
+  }
+  .footer-text {
+    font-size: 15px;
+  }
+  footer a {
+    font-size: 15px;
+  }
+  .footer-address {
+    left: 15%;
+  }
+  .social-icons {
+    font-size: 15px;
+    left: 75%;
+  }
+}
+
+/* Small Tablets to Big Tablets: 480px to 769px */
+@media only screen and (max-width: 769px) {
+  .hero-text {
+    font-size: 35px;
+  }
+
+  .hero-button {
+    position: relative;
+    right: 10px;
+  }
+
+  .menu-icon {
+    display: flex;
+    margin-right: 15px;
+    margin-top: 40px;
+  }
+  .menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-icon.active .bar:nth-child(1) {
+    transform: translatey(9px) rotate(45deg);
+  }
+  .menu-icon.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  .navbar-links {
+    visibility: hidden;
+    transition: 0.2s ease;
+  }
+  .navbar-links.active {
+    visibility: visible;
+  }
+  .navbar-links ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 120%;
+  }
+
+  .navbar-links li a {
+    padding: 10px;
+  }
+  .button-booking {
+    position: relative;
+    top: 30px;
+    right: 28%;
+    text-align: center;
+  }
+  .logo-image {
+    margin-top: 20px;
+  }
+  .hero-button {
+    position: relative;
+    right: 28px;
+  }
+
+  .company-profile {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .image-container {
+    flex-direction: column;
+  }
+  .partner-image-one {
+    height: 150px;
+    width: 150px;
+    bottom: 20px;
+    left: 110px;
+    position: relative;
+  }
+  .partner-image-two {
+    position: relative;
+    bottom: 280px;
+    height: 150px;
+    width: 150px;
+    left: 180px;
+  }
+  .partner-one-label {
+    left: 175px;
+    bottom: 310px;
+  }
+  .partner-two-label {
+    left: 170px;
+    bottom: 660px;
+    margin-top: 90px;
+  }
+
+  form {
+    height: 80%;
+    width: 90%;
+  }
+  .info-text {
+    display: none;
+  }
+  .contact-button {
+    border-radius: 50px;
+    left: -5px;
+  }
+
+  figcaption {
+    position: relative;
+    top: 120px;
+    left: 40px;
+    font-size: 13px;
+    margin-left: 70px;
+  }
+
+  .main-help {
+    font-size: 40px;
+  }
+  .sub-help {
+    top: 60px;
+  }
+  .help-box {
+    top: 100px;
+  }
+  .display-text {
+    font-size: 13px;
+  }
+  .hover-text {
+    font-size: 9px;
+    width: 150px;
+    margin-left: -75px;
+  }
+  .box2,
+  .box5 {
+    margin-left: 12px;
+  }
+
+  .overlay-one,
+  .overlay-two {
+    visibility: hidden;
+  }
+
+  .footer a {
+    font-size: 12px;
+  }
+  .social-icons {
+    left: 70%;
+    bottom: 100px;
+  }
+  .footer-address {
+    font-size: 13px;
+    left: 7%;
+    top: 12%;
+  }
+  .footer-text {
+    font-size: 12px;
+    text-align: left;
+    margin: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sticky {
+    height: 150px;
+  }
+
+  .navbar-links li a {
+    font-size: 11px;
+    padding: 7px;
+  }
+  .button-booking {
+    margin-left: 75px;
+    margin-right: 30px;
+    padding: 5px;
+  }
+  .menu-icon {
+    right: 0;
+  }
+  .hero-text {
+    font-size: 33px;
+  }
+  .hero-button {
+    font-size: 15px;
+  }
+
+  .company-profile p {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6,
+  .box7 {
+    padding: 20px 7px;
+  }
+  .box2,
+  .box5 {
+    margin-left: 40px;
+  }
+  .partner-image-one {
+    left: 40px;
+  }
+  .partner-one-label {
+    left: 100px;
+  }
+  .partner-image-two {
+    left: 100px;
+  }
+  .partner-two-label {
+    left: 90px;
+  }
+  .display-text {
+    font-size: 10px;
+  }
+  .hover-text {
+    font-size: 7px;
+  }
+  .contact-button {
+    font-size: 12px;
+    left: -20px;
+  }
+  .main-help {
+    font-size: 23px;
+  }
+  .sub-help {
+    font-size: 12px;
+  }
+  footer a {
+    top: 5px;
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  footer a:first-of-type {
+    margin-left: 10px;
+  }
+  .social-icons {
+    bottom: 110px;
+  }
+  .footer-address {
+    font-size: 10px;
+  }
+}
