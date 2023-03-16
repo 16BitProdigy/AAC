@@ -1,45 +1,55 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-const express = require("express");
-const env = require("dotenv").config();
+// const express = require('express');
+// const env = require('dotenv').config();
+// const nodemailer = require('nodemailer');
+
+import express from 'express';
+import env from 'dotenv';
+import nodemailer from 'nodemailer';
 
 const app = express();
-const nodemailer = require("nodemailer");
-
 const PORT = process.env.PORT || 5500;
 
 // Middleware
-app.use(express.static("public"));
+app.use(express.static('public'));
 app.use(express.json());
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(`${__dirname} + /public/index.html`);
 });
 
-app.post("/", (req, res) => {
+app.post('/', (req, res) => {
+  console.log('Sending Mail');
   console.log(req.body);
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: 'smtp.gmail.com',
+    // service: 'gmail',
     auth: {
-      user: process.env.MAIL_USERNAME,
-      pass: process.env.MAIL_PASSWORD,
-    },
+      user: 'YOUR_EMAIL_GOES_HERE',
+      pass: 'YOUR_PASSWORD_GOES_HERE'
+    }
   });
 
   const mailOptions = {
-    from: req.body.formEmail,
-    to: "tomisinadeoti@gmail.com",
-    subject: `Message from website: ${req.body.formEmail}`,
-    text: req.body.formMessage,
+    from: req.body.email,
+    to: 'tomisinadeoti@gmail.com',
+    subject: `Message from website: ${req.body.email}`,
+    text: req.body.message
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.log(`Error ${error}`);
-      res.send("error");
+      console.log(error);
+      res.status(400).json({
+        status: 'error',
+        message: error
+      });
     } else {
       console.log(`Email sent: ${info.response}`);
-      res.send("success");
+      res.status(200).json({
+        status: 'success',
+        data: info
+      });
     }
   });
 });
